@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pattern test</title>
+        <style>
+            .patterns {
+                display: grid;
+                grid-template-columns: repeat(37, 1fr);
+                column-gap: 10px;
+            }
+
+            .pattern-module {
+                height: 100px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .pattern-module div {
+                background-color: black;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="patterns"></div>
+        <script>
+            const data = {
+                column: 37,
+                row: 6,
+                selector: '.patterns',
+            };
+            // 총 반복할 갯수. 우리는 0 부터 쓰니까 1을 뺴줘야한다.
+            const total = data.column * data.row;
+            for (let i = 0; i < total; i++) {
+                const patternModule = document.createElement('div');
+                const patternContent = document.createElement('div');
+                patternModule.classList.add(`pattern-module`);
+                patternModule.classList.add(`pattern-module--${i}`);
+                patternContent.classList.add('pattern-content');
+                patternModule.append(patternContent);
+                patternModule.dataset.maxWidth = Math.floor(Math.random() * 100);
+                document.querySelector(data.selector).append(patternModule);
+            }
+        </script>
+    </body>
+</html>
