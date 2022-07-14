@@ -6,10 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pattern test</title>
         <style>
+            body {
+                height: 400vh;
+                margin: 0;
+            }
             .patterns {
+                width: 98vw;
                 display: grid;
-                grid-template-columns: repeat(37, 1fr);
-                column-gap: 10px;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
             }
 
             .pattern-module {
@@ -20,28 +27,46 @@
             .pattern-module div {
                 background-color: black;
                 height: 100%;
+                width: 100%;
+                transition: width 0.4s ease;
             }
         </style>
     </head>
     <body>
         <div class="patterns"></div>
         <script>
+            const availableScroll = document.body.offsetHeight - window.innerHeight;
+            let overHalf = false;
             const data = {
                 column: 37,
-                row: 6,
+                row: 5,
                 selector: '.patterns',
             };
-            // 총 반복할 갯수. 우리는 0 부터 쓰니까 1을 뺴줘야한다.
+            // 열의 간격을 지정하도록 하는 코드
+            document.querySelector(data.selector).style.columnGap = `${100 / data.column / 3}%`;
+            // 몇 열로 정렬될것인지를 지정하는 코드
+            document.querySelector(data.selector).style.gridTemplateColumns = `repeat(${data.column}, 1fr)`;
+            // 전체 개수를 정해주는 코드 (행 * 열)
             const total = data.column * data.row;
+            // pattern module을 만들어주는 코드
             for (let i = 0; i < total; i++) {
                 const patternModule = document.createElement('div');
                 const patternContent = document.createElement('div');
-                patternModule.classList.add(`pattern-module`);
+                const mapRatio = patternModule.classList.add(`pattern-module`);
                 patternModule.classList.add(`pattern-module--${i}`);
                 patternContent.classList.add('pattern-content');
                 patternModule.append(patternContent);
-                patternModule.dataset.maxWidth = Math.floor(Math.random() * 100);
+                patternContent.dataset.minWidth = Math.floor(Math.random() * 100);
                 document.querySelector(data.selector).append(patternModule);
+                addEventListener('scroll', () => {
+                    const scrollPercentage = window.scrollY / availableScroll;
+                    const availableWidth = 100 - patternContent.dataset.minWidth;
+                    if (window.scrollY < availableScroll / 2) {
+                        patternContent.style.width = `${100 - availableWidth * scrollPercentage * 2}%`;
+                    } else {
+                        patternContent.style.width = `${Number(patternContent.dataset.minWidth) + availableWidth * (scrollPercentage - 0.5) * 2}%`;
+                    }
+                });
             }
         </script>
     </body>
