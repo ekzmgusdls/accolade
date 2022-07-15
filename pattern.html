@@ -23,7 +23,7 @@
             }
 
             .pattern-module {
-                height: 120px;
+                height: 100px;
                 display: flex;
                 justify-content: flex-end;
             }
@@ -32,6 +32,11 @@
                 height: 100%;
                 width: 100%;
                 transition: width 0.2s ease;
+            }
+            @media all and (max-width: 800px) {
+                .pattern-module {
+                    height: 40px;
+                }
             }
         </style>
     </head>
