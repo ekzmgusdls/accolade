@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pattern test</title>
         <style>
+            html {
+                background: #343c36;
+            }
             body {
                 height: 400vh;
                 margin: 0;
@@ -20,15 +23,15 @@
             }
 
             .pattern-module {
-                height: 100px;
+                height: 120px;
                 display: flex;
                 justify-content: flex-end;
             }
             .pattern-module div {
-                background-color: black;
+                background-color: white;
                 height: 100%;
                 width: 100%;
-                transition: width 0.4s ease;
+                transition: width 0.2s ease;
             }
         </style>
     </head>
@@ -39,11 +42,11 @@
             let overHalf = false;
             const data = {
                 column: 37,
-                row: 5,
+                row: 6,
                 selector: '.patterns',
             };
             // 열의 간격을 지정하도록 하는 코드
-            document.querySelector(data.selector).style.columnGap = `${100 / data.column / 3}%`;
+            document.querySelector(data.selector).style.columnGap = `${100 / data.column / 2.5}%`;
             // 몇 열로 정렬될것인지를 지정하는 코드
             document.querySelector(data.selector).style.gridTemplateColumns = `repeat(${data.column}, 1fr)`;
             // 전체 개수를 정해주는 코드 (행 * 열)
