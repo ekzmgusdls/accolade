@@ -1,0 +1,36 @@
+.section {
+    &--3 {
+        .slide {
+            &__content {
+                display: flex;
+            }
+
+            &--1 {
+                background-image: url('../src/3_1.png');
+                text-align: center;
+
+                .slide__content {
+                    justify-content: flex-end;
+                    padding: opt(150);
+                }
+            }
+            &--2 {
+                background-image: url('../src/3_2.png');
+                .slide__content {
+                    height: 100%;
+                    align-items: flex-end;
+                    padding: opt(60);
+                }
+            }
+            &--3 {
+                background-image: url('../src/3_3.png');
+                .slide__content {
+                    height: 100%;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    padding: opt(60);
+                }
+            }
+        }
+    }
+}

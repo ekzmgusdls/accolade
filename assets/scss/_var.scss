@@ -1,0 +1,6 @@
+// 1920 비율의 pt값을 계산해서 가져오도록 하는 function
+
+@function opt($num) {
+    $result: $num / 192 * 10vw;
+    @return $result;
+}

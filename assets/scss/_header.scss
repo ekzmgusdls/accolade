@@ -1,0 +1,24 @@
+#header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: opt(1920);
+    z-index: 99;
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: opt(20) opt(40);
+    color: white;
+    ul {
+        display: flex;
+        gap: opt(20);
+        li {
+            font-size: opt(15);
+            &.active {
+                border-bottom: opt(2) solid white;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.section {
+    &--4 {
+        .slide {
+            &--1 {
+                background-image: url('../src/4_1.png');
+                .slide__content {
+                    text-align: center;
+                }
+            }
+            &--2 {
+                background-image: url('../src/4_2.png');
+                .slide__content {
+                    text-align: center;
+                }
+            }
+            &--3 {
+                background-image: url('../src/4_3.png');
+                .slide__content {
+                    padding: opt(150);
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+            &--4 {
+                background-image: url('../src/4_4.png');
+            }
+        }
+    }
+}

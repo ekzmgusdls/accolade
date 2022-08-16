@@ -1,0 +1,19 @@
+.section {
+    &--6 {
+        background-image: url('../src/6_1.png');
+
+        .section__content {
+            padding: opt(100);
+            text-align: center;
+            h2 {
+                font-size: opt(40);
+            }
+            p {
+                font-size: opt(24);
+            }
+        }
+    }
+    footer {
+        border-top: 1px solid white;
+    }
+}

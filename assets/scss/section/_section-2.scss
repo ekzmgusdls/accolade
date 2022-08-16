@@ -1,0 +1,23 @@
+.section {
+    &--2 {
+        position: relative;
+        display: flex;
+        .left-container {
+            width: opt(1100);
+            height: 100vh;
+            background-image: url('../src/2_1.png');
+            background-size: cover;
+            background-position: center right;
+        }
+
+        .right-container {
+            display: flex;
+            width: calc(100vw - #{opt(1100)});
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: opt(24);
+            text-align: center;
+        }
+    }
+}
