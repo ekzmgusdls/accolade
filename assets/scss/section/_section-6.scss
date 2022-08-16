@@ -15,5 +15,33 @@
     }
     footer {
         border-top: 1px solid white;
+        margin-top: opt(60);
+        padding-top: opt(20);
+        font-size: opt(13);
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .footer-right {
+            display: flex;
+            gap: opt(40);
+            &__row {
+                display: flex;
+                gap: opt(15);
+                align-items: center;
+                img {
+                    width: 100%;
+                }
+                .daelim {
+                    width: opt(105);
+                }
+                .wisecity {
+                    width: opt(115);
+                }
+                .cnd {
+                    width: opt(135);
+                }
+            }
+        }
     }
 }

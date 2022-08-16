@@ -3,6 +3,12 @@
         .slide {
             &--1 {
                 background-image: url('../src/5_1.png');
+                .slide__content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
             }
             &--2 {
                 .slide__content {
@@ -19,6 +25,13 @@
                             background-size: cover;
                             background-position: center center;
                         }
+                    }
+                    .text-container {
+                        padding: opt(110) 0;
+                        padding-left: opt(80);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
                     }
                 }
             }

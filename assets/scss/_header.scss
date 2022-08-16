@@ -11,6 +11,8 @@
     align-items: center;
     padding: opt(20) opt(40);
     color: white;
+    font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
+
     ul {
         display: flex;
         gap: opt(20);
@@ -19,6 +21,27 @@
             &.active {
                 border-bottom: opt(2) solid white;
             }
+        }
+    }
+
+    .logo {
+        width: opt(180);
+
+        img,
+        a {
+            width: 100%;
+        }
+        position: fixed;
+        left: 50%;
+        top: opt(20);
+        transform: translateX(-50%);
+    }
+
+    .sns {
+        width: opt(20);
+        img,
+        a {
+            width: 100%;
         }
     }
 }
