@@ -92,3 +92,104 @@ sup {
     font-family: pretendard;
     font-size: 0.6em;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: gray;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: calc(#{opt(25)} * -1);
+    display: flex;
+    justify-content: flex-end;
+    gap: opt(10);
+}
+
+.swiper-pagination-bullet {
+    border-radius: 0;
+    background: #575757;
+    opacity: 1;
+    width: opt(10);
+    height: opt(10);
+    margin: 0;
+}
+.swiper-pagination-bullet-active {
+    background: rgb(128, 122, 122);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 !important;
+}
+
+.swiper-button-next {
+    width: 50%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: none;
+    margin-top: 0;
+    cursor: e-resize;
+    &::after {
+        content: '';
+    }
+}
+
+.swiper-button-prev {
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: none;
+    margin-top: 0;
+    cursor: w-resize;
+    &::after {
+        content: '';
+    }
+}
+
+@include mobile {
+    .slide {
+        &.first {
+            font-size: opt(18);
+            h2 {
+                font-size: opt(27);
+                margin-bottom: opt(20);
+            }
+            p {
+                font-size: opt(18);
+            }
+        }
+    }
+    .section {
+        font-size: opt(18);
+        h2 {
+            font-size: opt(27);
+            margin-bottom: opt(20);
+        }
+        .bottom-title {
+            padding: opt(20);
+            font-size: opt(21);
+            bottom: 0;
+            .en,
+            .ko {
+                font-size: opt(21);
+                border-left-width: opt(20);
+                border-right-width: opt(20);
+            }
+        }
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        justify-content: center;
+
+        bottom: calc(#{opt(90)} * -1);
+        padding: opt(40);
+    }
+}

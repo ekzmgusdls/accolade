@@ -1,4 +1,5 @@
 addEventListener('DOMContentLoaded', () => {
+    const mobileWidthStd = 800;
     function makeVideoResponsible() {
         const target = document.querySelector('video');
         if (target) {
@@ -14,8 +15,6 @@ addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    makeVideoResponsible();
-    addEventListener('resize', makeVideoResponsible);
     new fullpage('#fullpage', {
         autoScrolling: true,
         scrollHorizontally: true,
@@ -23,32 +22,95 @@ addEventListener('DOMContentLoaded', () => {
         anchors: ['home', 'brand', 'fortuna', 'virtu', 'architect', 'gallery'],
         menu: '.nav',
         slidesNavigation: true,
-        licenseKey: '1AA06FBF-F19844AC-86DD0A61-41CD1505',
+        licenseKey: '9FC70B70-EE3A4072-95F27451-A24A1E71',
         scrollHorizontally: true,
-        scrollHorizontallyKey: 'YWNjb2xhZGUxMDA5XzlidGMyTnliMnhzU0c5eWFYcHZiblJoYkd4NXJoOA', //see https://goo.gl/xkUmHS
+        scrollHorizontallyKey: 'YWNjb2xhZGUxMDA5LmNvbV85MFNjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDVuQ0U=',
 
         afterLoad: function (origin, destination, direction, trigger) {
             var origin = this;
-            if (direction === 'down') {
-                if (origin.index === 0) {
-                    console.log('hi');
-                    $('#header').css('display', 'flex').hide().fadeIn();
+            // 웹인 경우
+            if (innerWidth > mobileWidthStd) {
+                if (direction === 'down') {
+                    if (origin.index === 0) {
+                        $('#header').css('display', 'flex').hide().fadeIn();
+                    }
+                } else {
                 }
-            } else {
+            }
+            // 모바일인 경우
+            if (innerWidth <= mobileWidthStd) {
+                if (direction === 'down') {
+                    if (origin.index === 0) {
+                        $('#mobile-header').css('display', 'flex').hide().fadeIn();
+                    }
+                } else {
+                }
             }
         },
         onLeave: function (origin, destination, direction, trigger) {
             var origin = this;
-            if (direction === 'down') {
-            } else {
-                if (origin.index === 1) {
-                    $('#header')
-                        .animate({
-                            display: 'none',
-                        })
-                        .fadeOut();
+            // 웹인 경우
+            if (innerWidth > mobileWidthStd) {
+                if (direction === 'down') {
+                } else {
+                    if (origin.index === 1) {
+                        $('#header').fadeOut();
+                    }
+                }
+            }
+            // 모바일인 경우
+            if (innerWidth <= mobileWidthStd) {
+                if (direction === 'down') {
+                } else {
+                    if (origin.index === 1) {
+                        $('#mobile-header').fadeOut();
+                    }
                 }
             }
         },
+        afterRender: function () {
+            const swiper = new Swiper('.gallery', {
+                // Optional parameters
+                effect: 'fade',
+
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        },
+    });
+
+    makeVideoResponsible();
+    addEventListener('resize', () => {
+        makeVideoResponsible();
+        // 웹일때
+        if (innerWidth > mobileWidthStd) {
+            $('#mobile-header').fadeOut();
+        } else {
+            $('#header').fadeOut();
+        }
+    });
+
+    $('#mobile-header .menu-button').click(() => {
+        $('#mobile-nav').css('display', 'flex').hide().fadeIn();
+        $('#mobile-nav ul li').click((e) => {
+            $('#mobile-nav').fadeOut();
+        });
     });
 });

@@ -38,8 +38,10 @@ $animation-duration: 7s;
             transform: translateX(-50%);
             opacity: 0;
             animation: arrowshow ease $animation-duration forwards;
+            img {
+                width: 100%;
+            }
         }
-
         .main-logo {
             width: opt(520);
             position: absolute;
@@ -87,5 +89,25 @@ $animation-duration: 7s;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@include mobile {
+    .section {
+        &--1 {
+            .section__content {
+                padding: opt(20);
+            }
+            .left-bar,
+            .right-bar {
+                width: opt(20);
+            }
+            .main-logo {
+                width: opt(255);
+            }
+            .bottom-arrow {
+                width: opt(70);
+            }
+        }
     }
 }

@@ -45,3 +45,63 @@
         }
     }
 }
+
+#mobile-header {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: opt(20);
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 8%, rgba(0, 0, 0, 0.3023255813953488) 100%);
+
+    .sns {
+        width: opt(20);
+        a {
+            width: 100%;
+        }
+    }
+    .logo {
+        width: opt(140);
+        position: fixed;
+        left: 50%;
+        top: opt(20);
+        transform: translateX(-50%);
+    }
+}
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(#{opt(5)});
+    z-index: 99;
+    display: none;
+    justify-content: space-between;
+    padding: opt(20);
+    text-align: center;
+    font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
+
+    .left-bar {
+        width: opt(30);
+        height: 100%;
+        background: white;
+    }
+    .right-bar {
+        width: opt(30);
+        height: 100%;
+        background: white;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: opt(36);
+    }
+}

@@ -34,3 +34,36 @@
         }
     }
 }
+
+@include mobile {
+    .section {
+        &--3 {
+            .slide {
+                &--1 {
+                    background-position: right 63% center;
+                    .slide__content {
+                        height: 100%;
+                        padding: opt(40) opt(20);
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                    }
+                }
+                &--2 {
+                    .slide__content {
+                        padding: opt(40) opt(20);
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+                &--3 {
+                    .slide__content {
+                        padding: opt(40) opt(20);
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="https://use.typekit.net/klf3xix.css" />
         <script src="assets/js/fullpage.scrollHorizontally.min.js"></script>
         <script type="text/javascript" src="https://unpkg.com/fullpage.js@3.1.2/dist/fullpage.extensions.min.js"></script>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="assets/js/main.js"></script>
         <title>ACCOLADE 1009</title>
         <link rel="stylesheet" href="assets/css/style.css" />
@@ -36,10 +37,42 @@
                 <a href="#home"> <img src="./assets/src/accolade_logo.svg" alt="" /></a>
             </div>
             <div class="sns">
-                <a href="https://www.instagram.com">
+                <a href="https://www.instagram.com" target="_blank">
                     <img src="./assets/src/insta.svg" alt="" />
                 </a>
             </div>
+        </div>
+        <div id="mobile-header">
+            <div class="sns">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./assets/src/insta.svg" alt="" />
+                </a>
+            </div>
+            <div data-menuanchor="home" class="logo">
+                <a href="#home"> <img src="./assets/src/accolade_logo.svg" alt="" /></a>
+            </div>
+            <div class="menu-button">
+                <img src="./assets/src/menu-button.svg" alt="" />
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <div class="left-bar"></div>
+            <ul class="nav">
+                <li data-menuanchor="brand"><a href="#brand">BRAND</a></li>
+                <li data-menuanchor="fortuna">
+                    <a href="#fortuna">FORTUNA</a>
+                </li>
+                <li data-menuanchor="virtu">
+                    <a href="#virtu">VIRTU</a>
+                </li>
+                <li data-menuanchor="architect">
+                    <a href="#architect">ARCHITECT</a>
+                </li>
+                <li data-menuanchor="gallery">
+                    <a href="#gallery">GALLERY</a>
+                </li>
+            </ul>
+            <div class="right-bar"></div>
         </div>
         <main id="fullpage">
             <section class="section fp-auto-height-responsive section--1">
@@ -115,7 +148,8 @@
                                 아클래드의 시티뷰,<br />
                                 그 사계절의 시간 어딘가에는<br />
                                 놀라운 새벽의 일출이 있고<br />
-                                석양을 바라보며 다채로운 도시를 내려다보는 사람이 있고<br />
+                                석양을 바라보며 다채로운 <br />
+                                도시를 내려다보는 사람이 있고<br />
                                 낭만적인 도시 음악들이 있고<br />
                                 반짝이는 도시의 불빛이 있습니다.
                             </p>
@@ -169,11 +203,25 @@
                 <div class="slide slide--4">
                     <div class="slide__content">
                         <div class="gallery">
-                            <div class="gallery__slide gallery__slide--1"></div>
-                            <div class="gallery__slide gallery__slide--2"></div>
-                            <div class="gallery__slide gallery__slide--3"></div>
+                            <div class="swiper-wrapper">
+                                <div class="gallery__slide gallery__slide--1 swiper-slide"></div>
+                                <div class="gallery__slide gallery__slide--2 swiper-slide"></div>
+                                <div class="gallery__slide gallery__slide--3 swiper-slide"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="text-container"></div>
+                        <div class="text-container">
+                            <h2>LIFESTYLE</h2>
+                            <p>
+                                생활 속 장면들이 최고의 순간으로 <br />디자인되는 삶.<br />
+                                <br />
+                                아클래드의 라이프스타일은<br />
+                                삶의 질을 높이는 주거 공간을 제공합니다.<br />
+                                새로운 경험과 취향이 구현되는 주거공간을 의미합니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -200,23 +248,19 @@
                                 <p>대한민국 대표 건축가 김찬중 <br /><br />“수천년의 시간이 지나도 그 가치를 더해가는 <br />고전(Classic)과 같은 모습으로 보여지길 바랐다.”</p>
                             </div>
                             <div class="text-container__body">
-                                주요 작품 <br />
-                                한남동 오피스 현대어린이책미술관 <br />
-                                울릉도 코스모스 리조트 <br />
-                                마곡 서울식물원 온실 <br />
-                                JTBC 신사옥 <br />
-                                한강 보행자 터널 프로젝트 <br />
-                                SK행복나눔재단 사옥 <br />
+                                주요 작품<br />
+                                울릉도 코스모스 리조트<br />
+                                하나은행 삼성동(PLACE 1)<br />
+                                현대어린이책미술관(MOKA)<br />
+                                한남동 HANDS 사옥<br />
+                                마곡 서울식물원<br />
+                                우란문화재단<br />
+                                JTBC 신사옥<br />
                                 <br />
-                                경희대학교 공과대학 건축학과 객원교수 <br />
-                                THE SYSTEM LAB 대표 <br />
-                                고려대 건축학과 졸업/하버드대학원 건축학 석사 <br />
-                                한울건축, 캠브리지 챈 크리거, 보스톤 KSWA에서 근무 <br />
-                                <br />
-                                2006년 제 10회 이태리 베니스 비엔날레 한국 대표 건축가선정 <br />
-                                2006년 같은 해 베이징 비엔날레 [주목받은 아시아 젊은 건축가 6인 선정] <br />
-                                영국 월 페이퍼 [주목해야 할 세계 건축가 20인 선정] <br />
-                                2017년 독일 레드닷 어워드 수상<br />
+                                경희대학교 공과대학 건축학과 초빙교수<br />
+                                THE SYSTEM LAB 대표<br />
+                                고려대학교 건축공학과 학사, 하버드대학 건축학 석사<br />
+                                한울건출, 캠브리지 챈 크리거, 보스턴 KSWA 근무<br />
                             </div>
                         </div>
                     </div>
