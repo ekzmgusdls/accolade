@@ -109,7 +109,7 @@ addEventListener('DOMContentLoaded', () => {
 
     $('#mobile-header .menu-button').click(() => {
         $('#mobile-nav').css('display', 'flex').hide().fadeIn();
-        $('#mobile-nav ul li').click((e) => {
+        $('#mobile-nav').click(() => {
             $('#mobile-nav').fadeOut();
         });
     });
