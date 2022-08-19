@@ -15,7 +15,7 @@ body {
     // font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: opt(18);
+    font-size: opt(16);
     background-color: black;
     line-height: 1.5;
     color: white;
@@ -26,9 +26,9 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: black;
-    font-size: opt(18);
+    font-size: opt(16);
     h2 {
-        font-size: opt(30);
+        font-size: opt(27);
         margin-bottom: opt(10);
         font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
     }
@@ -37,7 +37,7 @@ body {
         display: flex;
     }
     &--1 {
-        background-image: url('../src/1_1.png');
+        background-image: url('../src/1_1.jpg');
     }
 
     .bottom-title {
@@ -52,14 +52,14 @@ body {
         font-weight: 400;
         padding-left: opt(40);
         padding-right: opt(40);
-        font-size: opt(40);
+        font-size: opt(36);
         .ko,
         .en {
             border-right: opt(30) solid white;
             border-left: opt(30) solid white;
         }
         .ko {
-            font-size: opt(37);
+            font-size: opt(33);
         }
     }
 }
@@ -69,17 +69,17 @@ body {
     background-position: center center;
     background-size: cover;
     &.first {
-        font-size: opt(24);
+        font-size: opt(21);
         h2 {
-            font-size: opt(40);
+            font-size: opt(36);
         }
     }
 }
 
 h2 {
-    font-size: opt(40);
+    font-size: opt(36);
     .ko {
-        font-size: opt(37);
+        font-size: opt(33);
     }
 }
 
@@ -154,29 +154,29 @@ sup {
 @include mobile {
     .slide {
         &.first {
-            font-size: opt(18);
+            font-size: opt(16);
             h2 {
-                font-size: opt(27);
+                font-size: opt(24);
                 margin-bottom: opt(20);
             }
             p {
-                font-size: opt(18);
+                font-size: opt(16);
             }
         }
     }
     .section {
-        font-size: opt(18);
+        font-size: opt(16);
         h2 {
-            font-size: opt(27);
+            font-size: opt(24);
             margin-bottom: opt(20);
         }
         .bottom-title {
             padding: opt(20);
-            font-size: opt(21);
+            font-size: opt(18);
             bottom: 0;
             .en,
             .ko {
-                font-size: opt(21);
+                font-size: opt(18);
                 border-left-width: opt(20);
                 border-right-width: opt(20);
             }

@@ -1,15 +1,15 @@
 .section {
     &--6 {
-        background-image: url('../src/6_1.png');
+        background-image: url('../src/6_1.jpg');
 
         .section__content {
             padding: opt(100);
             text-align: center;
             h2 {
-                font-size: opt(40);
+                font-size: opt(36);
             }
             p {
-                font-size: opt(24);
+                font-size: opt(21);
             }
         }
     }
@@ -56,10 +56,10 @@
                 justify-content: center;
 
                 h2 {
-                    font-size: opt(27);
+                    font-size: opt(24);
                 }
                 p {
-                    font-size: opt(18);
+                    font-size: opt(16);
                 }
             }
             footer {

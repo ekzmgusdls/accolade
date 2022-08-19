@@ -2,19 +2,19 @@
     &--4 {
         .slide {
             &--1 {
-                background-image: url('../src/4_1.png');
+                background-image: url('../src/4_1.jpg');
                 .slide__content {
                     text-align: center;
                 }
             }
             &--2 {
-                background-image: url('../src/4_2.png');
+                background-image: url('../src/4_2.jpg');
                 .slide__content {
                     text-align: center;
                 }
             }
             &--3 {
-                background-image: url('../src/4_3.png');
+                background-image: url('../src/4_3.jpg');
                 .slide__content {
                     padding: opt(150);
                     display: flex;
@@ -22,7 +22,7 @@
                 }
             }
             &--4 {
-                background-image: url('../src/4_4.png');
+                background-image: url('../src/4_4.jpg');
                 .slide__content {
                     padding: opt(150) opt(90);
                     display: flex;
@@ -40,13 +40,13 @@
                         background-size: cover;
                         background-position: center center;
                         &--1 {
-                            background-image: url('../src/4_4_1.png');
+                            background-image: url('../src/4_4_1.jpg');
                         }
                         &--2 {
-                            background-image: url('../src/4_4_2.png');
+                            background-image: url('../src/4_4_2.jpg');
                         }
                         &--3 {
-                            background-image: url('../src/4_4_3.png');
+                            background-image: url('../src/4_4_3.jpg');
                         }
                     }
                 }
