@@ -1,2 +1,0 @@
-RewriteCond %{HTTP_HOST} ^www\.accolace1009\.com [NC]
-RewriteRule ^(.*)$ http://accolade1009.com/ [L,R=301]
