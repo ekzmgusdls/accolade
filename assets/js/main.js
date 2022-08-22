@@ -67,7 +67,37 @@ addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
+
+            let nextSlideIndex = origin.index + 1; // convert from index to slide nr.
+            let nextSibling = destination.item;
+            let skipped = false; // avoid if($(destination.item).is(':hidden'))
+            while ($(nextSibling).is(':hidden')) {
+                if (direction === 'down') {
+                    // misusing skipped to find out if this is the first round.
+                    // in the first round we need +2, in all others +1 (-2, -1 when going upwards)
+                    console.log('hi');
+                    if (!skipped) {
+                        nextSlideIndex++;
+                    }
+                    nextSlideIndex++;
+                    nextSibling = nextSibling.nextElementSibling;
+                } else {
+                    if (!skipped) {
+                        nextSlideIndex--;
+                    }
+                    nextSlideIndex--;
+                    nextSibling = nextSibling.previousElementSibling;
+                }
+
+                skipped = true;
+            }
+
+            if (skipped) {
+                fullpage_api.moveTo(nextSlideIndex);
+                return false; // cancel slide that triggered this onLeave
+            }
         },
+
         afterRender: function () {
             const swiper = new Swiper('.gallery', {
                 // Optional parameters
