@@ -25,13 +25,13 @@ addEventListener('DOMContentLoaded', () => {
         licenseKey: '9FC70B70-EE3A4072-95F27451-A24A1E71',
         scrollHorizontally: true,
         scrollHorizontallyKey: 'YWNjb2xhZGUxMDA5LmNvbV85MFNjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDVuQ0U=',
-
+        responsiveWidth: '800pxc ',
         afterLoad: function (origin, destination, direction, trigger) {
             var origin = this;
             // 웹인 경우
             if (innerWidth > mobileWidthStd) {
                 if (direction === 'down') {
-                    if (origin.index === 0) {
+                    if ($('#header').css('display') !== 'flex') {
                         $('#header').css('display', 'flex').hide().fadeIn();
                     }
                 } else {
@@ -40,7 +40,7 @@ addEventListener('DOMContentLoaded', () => {
             // 모바일인 경우
             if (innerWidth <= mobileWidthStd) {
                 if (direction === 'down') {
-                    if (origin.index === 0) {
+                    if ($('#header').css('display') !== 'flex') {
                         $('#mobile-header').css('display', 'flex').hide().fadeIn();
                     }
                 } else {
@@ -75,7 +75,6 @@ addEventListener('DOMContentLoaded', () => {
                 if (direction === 'down') {
                     // misusing skipped to find out if this is the first round.
                     // in the first round we need +2, in all others +1 (-2, -1 when going upwards)
-                    console.log('hi');
                     if (!skipped) {
                         nextSlideIndex++;
                     }
@@ -124,6 +123,14 @@ addEventListener('DOMContentLoaded', () => {
                 },
             });
         },
+
+        // onSlideLeave(section, origin, destination, direction, trigger) {
+        //     console.log(section.anchor, destination);
+        //     if (section.anchor == 'architect' && destination.isLast) {
+        //         console.log('여기서 섹션을 아래로 이동하는 함수를 실행시키도록한다.');
+        //         fullpage_api.moveSectionDown();
+        //     }
+        // },
     });
 
     makeVideoResponsible();
