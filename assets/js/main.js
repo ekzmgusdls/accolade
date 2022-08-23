@@ -39,11 +39,12 @@ addEventListener('DOMContentLoaded', () => {
             }
             // 모바일인 경우
             if (innerWidth <= mobileWidthStd) {
-                if (direction === 'down') {
-                    if ($('#header').css('display') !== 'flex') {
-                        $('#mobile-header').css('display', 'flex').hide().fadeIn();
-                    }
-                } else {
+                if (direction !== 'down') {
+                    return;
+                }
+
+                if ($('#mobile-header').css('display') !== 'flex') {
+                    $('#mobile-header').css('display', 'flex').hide().fadeIn();
                 }
             }
         },
@@ -66,34 +67,6 @@ addEventListener('DOMContentLoaded', () => {
                         $('#mobile-header').fadeOut();
                     }
                 }
-            }
-
-            let nextSlideIndex = origin.index + 1; // convert from index to slide nr.
-            let nextSibling = destination.item;
-            let skipped = false; // avoid if($(destination.item).is(':hidden'))
-            while ($(nextSibling).is(':hidden')) {
-                if (direction === 'down') {
-                    // misusing skipped to find out if this is the first round.
-                    // in the first round we need +2, in all others +1 (-2, -1 when going upwards)
-                    if (!skipped) {
-                        nextSlideIndex++;
-                    }
-                    nextSlideIndex++;
-                    nextSibling = nextSibling.nextElementSibling;
-                } else {
-                    if (!skipped) {
-                        nextSlideIndex--;
-                    }
-                    nextSlideIndex--;
-                    nextSibling = nextSibling.previousElementSibling;
-                }
-
-                skipped = true;
-            }
-
-            if (skipped) {
-                fullpage_api.moveTo(nextSlideIndex);
-                return false; // cancel slide that triggered this onLeave
             }
         },
 
@@ -122,14 +95,6 @@ addEventListener('DOMContentLoaded', () => {
                     el: '.swiper-scrollbar',
                 },
             });
-        },
-
-        onSlideLeave(section, origin, destination, direction, trigger) {
-            console.log(section.anchor, destination);
-            if (section.anchor == 'architect' && destination.isLast) {
-                console.log('여기서 섹션을 아래로 이동하는 함수를 실행시키도록한다.');
-                // fullpage_api.moveSectionDown();
-            }
         },
     });
 

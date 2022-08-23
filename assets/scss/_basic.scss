@@ -97,7 +97,10 @@ sup {
 .swiper-button-prev,
 .swiper-button-next {
     color: gray;
-    width: opt(20);
+    width: opt(60);
+    img {
+        width: 100%;
+    }
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -138,7 +141,7 @@ sup {
     mix-blend-mode: difference;
     transform: translateY(-50%);
     img {
-        width: opt(30);
+        width: opt(25);
     }
     &::after {
         content: '';
@@ -155,7 +158,7 @@ sup {
     mix-blend-mode: difference;
     transform: translateY(-50%);
     img {
-        width: opt(30);
+        width: opt(25);
         transform: rotate(180deg);
     }
     &::after {
@@ -172,6 +175,13 @@ sup {
 }
 
 @include mobile {
+    .swiper-button-prev,
+    .swiper-button-next {
+        img {
+            width: opt(15);
+        }
+    }
+
     .letter-space-wide {
         letter-spacing: 0;
     }

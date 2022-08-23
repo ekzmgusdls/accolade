@@ -98,6 +98,7 @@
             .slide {
                 &--1 {
                     background-image: url('../src/5_1_mobile.jpg');
+                    background-size: 70%;
                     .slide__content {
                         height: 100%;
                         align-items: flex-end;
@@ -139,8 +140,13 @@
                     .slide__content {
                         padding-left: opt(30);
                         padding-right: opt(30);
+                        padding-top: opt(60);
                         .img-container {
                             display: none;
+                        }
+
+                        .text-container {
+                            font-size: opt(12);
                         }
                     }
                 }
