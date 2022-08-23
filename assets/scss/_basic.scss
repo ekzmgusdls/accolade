@@ -27,9 +27,9 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: black;
-    font-size: opt(16);
+    font-size: opt(11);
     h2 {
-        font-size: opt(27);
+        font-size: opt(20);
         margin-bottom: opt(10);
         font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
     }
@@ -53,14 +53,14 @@ body {
         font-weight: 400;
         padding-left: opt(40);
         padding-right: opt(40);
-        font-size: opt(36);
+        font-size: opt(25);
         .ko,
         .en {
             border-right: opt(30) solid white;
             border-left: opt(30) solid white;
         }
         .ko {
-            font-size: opt(33);
+            font-size: opt(22);
         }
     }
 }
@@ -70,9 +70,9 @@ body {
     background-position: center center;
     background-size: cover;
     &.first {
-        font-size: opt(21);
+        font-size: opt(14);
         h2 {
-            font-size: opt(36);
+            font-size: opt(22);
         }
     }
 }
@@ -97,6 +97,7 @@ sup {
 .swiper-button-prev,
 .swiper-button-next {
     color: gray;
+    width: opt(20);
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -171,6 +172,9 @@ sup {
 }
 
 @include mobile {
+    .letter-space-wide {
+        letter-spacing: 0;
+    }
     .mobile-section {
         display: table !important;
     }

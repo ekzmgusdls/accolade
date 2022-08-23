@@ -1,0 +1,90 @@
+.section {
+    &--7 {
+        background-image: url('../src/6_1.jpg');
+
+        .section__content {
+            padding: opt(100);
+            text-align: center;
+            h2 {
+                font-size: opt(36);
+            }
+            p {
+                font-size: opt(21);
+            }
+        }
+    }
+    footer {
+        border-top: 1px solid white;
+        margin-top: opt(60);
+        padding-top: opt(20);
+        font-size: opt(13);
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .footer-right {
+            display: flex;
+            gap: opt(40);
+            &__row {
+                display: flex;
+                gap: opt(15);
+                align-items: center;
+                img {
+                    width: 100%;
+                }
+                .daelim {
+                    width: opt(105);
+                }
+                .wisecity {
+                    // width: opt(115);
+                }
+                .cnd {
+                    width: opt(135);
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .section {
+        &--7 {
+            background-position: left 23% center;
+            .section__content {
+                padding: opt(20);
+                padding-bottom: opt(100);
+                justify-content: center;
+
+                h2 {
+                    font-size: opt(24);
+                }
+                p {
+                    font-size: opt(16);
+                }
+            }
+            footer {
+                font-size: opt(7);
+                margin-top: opt(40);
+                .footer-left {
+                    width: 65%;
+                }
+                .footer-right {
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    gap: opt(5);
+                    &__row {
+                        .daelim {
+                            width: opt(55);
+                        }
+                        .wisecity {
+                            width: opt(60);
+                        }
+                        .cnd {
+                            width: opt(70);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

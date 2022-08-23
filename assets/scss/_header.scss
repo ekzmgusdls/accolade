@@ -19,7 +19,7 @@
         display: flex;
         gap: opt(20);
         li {
-            font-size: opt(15);
+            font-size: opt(12);
             &.active {
                 border-bottom: opt(2) solid white;
             }
@@ -27,7 +27,7 @@
     }
 
     .logo {
-        width: opt(180);
+        width: opt(140);
 
         img,
         a {

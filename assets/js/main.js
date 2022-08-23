@@ -19,7 +19,7 @@ addEventListener('DOMContentLoaded', () => {
         autoScrolling: true,
         scrollHorizontally: true,
         scrollingSpeed: 700,
-        anchors: ['home', 'brand', 'location', 'virtu', 'architect', 'gallery'],
+        anchors: ['home', 'brand', 'fortuna', 'virtu', 'architect', 'location', 'gallery'],
         menu: '.nav',
         slidesNavigation: true,
         licenseKey: '9FC70B70-EE3A4072-95F27451-A24A1E71',
@@ -124,13 +124,13 @@ addEventListener('DOMContentLoaded', () => {
             });
         },
 
-        // onSlideLeave(section, origin, destination, direction, trigger) {
-        //     console.log(section.anchor, destination);
-        //     if (section.anchor == 'architect' && destination.isLast) {
-        //         console.log('여기서 섹션을 아래로 이동하는 함수를 실행시키도록한다.');
-        //         fullpage_api.moveSectionDown();
-        //     }
-        // },
+        onSlideLeave(section, origin, destination, direction, trigger) {
+            console.log(section.anchor, destination);
+            if (section.anchor == 'architect' && destination.isLast) {
+                console.log('여기서 섹션을 아래로 이동하는 함수를 실행시키도록한다.');
+                // fullpage_api.moveSectionDown();
+            }
+        },
     });
 
     makeVideoResponsible();
