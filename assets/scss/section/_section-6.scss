@@ -5,13 +5,14 @@
             align-items: center;
         }
         .mxm-left-container {
-            width: 50%;
-            background-image: url('../src/6_map.jpg');
+            background-image: url('../src/6_map_pc.jpg');
             height: 100%;
+            width: 55%;
+            aspect-ratio: 1;
             background-size: cover;
         }
         .mxm-right-container {
-            width: 50%;
+            width: 100%;
             text-align: center;
         }
     }
@@ -25,6 +26,8 @@
             }
             .mxm-left-container {
                 width: 100%;
+                background-image: url('../src/6_map_mb.jpg');
+                aspect-ratio: auto;
             }
             .mxm-right-container {
                 position: absolute;
