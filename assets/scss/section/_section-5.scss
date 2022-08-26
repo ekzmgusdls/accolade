@@ -146,6 +146,7 @@
                         padding-left: opt(30);
                         padding-right: opt(30);
                         padding-top: opt(60);
+                        padding-bottom: opt(60);
                         background-image: none;
                         .img-container {
                             display: none;
@@ -153,6 +154,7 @@
 
                         .text-container {
                             font-size: opt(12);
+                            justify-content: flex-end;
                         }
                     }
                 }
