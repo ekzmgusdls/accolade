@@ -27,7 +27,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: black;
-    font-size: opt(11);
+    font-size: opt(14);
+
     h2 {
         font-size: opt(20);
         margin-bottom: opt(10);
@@ -36,6 +37,12 @@ body {
 
     &__content {
         display: flex;
+        &.first {
+            font-size: opt(14);
+            h2 {
+                font-size: opt(25);
+            }
+        }
     }
     &--1 {
         background-image: url('../src/1_1.jpg');
@@ -72,7 +79,7 @@ body {
     &.first {
         font-size: opt(14);
         h2 {
-            font-size: opt(22);
+            font-size: opt(25);
         }
     }
 }
