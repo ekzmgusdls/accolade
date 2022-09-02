@@ -90,7 +90,14 @@ addEventListener('DOMContentLoaded', () => {
     });
 
     setTimeout(function () {
-        $('#video').css('display', 'flex').hide().fadeIn(1200);
+        $('#video')
+            .css('display', 'flex')
+            .hide()
+            .fadeIn(1200, function () {
+                $('.video-exit').click(() => {
+                    $('#video').stop().fadeOut(800);
+                });
+            });
     }, 4000);
 
     // makeVideoResponsible();
