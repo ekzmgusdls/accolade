@@ -1,19 +1,5 @@
 addEventListener('DOMContentLoaded', () => {
     const mobileWidthStd = 800;
-    function makeVideoResponsible() {
-        const target = document.querySelector('video');
-        if (target) {
-            const currentRatio = innerWidth / innerHeight;
-            const videoRatio = 16 / 9;
-            if (videoRatio > currentRatio) {
-                target.style.width = 'auto';
-                target.style.height = '100vh';
-            } else {
-                target.style.height = 'auto';
-                target.style.width = '100vw';
-            }
-        }
-    }
 
     new fullpage('#fullpage', {
         autoScrolling: true,
@@ -68,6 +54,11 @@ addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
+
+            if (destination.anchor !== 'home') {
+                $('#video').stop();
+                $('#video').fadeOut();
+            }
         },
 
         afterRender: function () {
@@ -98,9 +89,13 @@ addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    makeVideoResponsible();
+    setTimeout(function () {
+        $('#video').css('display', 'flex').hide().fadeIn(1200);
+    }, 4000);
+
+    // makeVideoResponsible();
     addEventListener('resize', () => {
-        makeVideoResponsible();
+        // makeVideoResponsible();
         // 웹일때
         if (innerWidth > mobileWidthStd) {
             $('#mobile-header').fadeOut();
