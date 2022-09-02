@@ -189,6 +189,7 @@ sup {
     height: 100vh;
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    max-height: -webkit-fill-availalbe;
     display: none;
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
@@ -196,10 +197,12 @@ sup {
     video {
         width: 100%;
         height: auto;
+        background: black;
     }
     .video-container {
         position: relative;
         width: 89%;
+        bottom: opt(80);
     }
     .video-exit {
         position: absolute;
@@ -209,6 +212,7 @@ sup {
         height: opt(50);
         z-index: 999;
         background: black;
+        cursor: pointer;
         &__left,
         &__right {
             background: white;
@@ -289,9 +293,9 @@ sup {
 
         .video-exit {
             right: 0;
-            top: calc(-1 * #{opt(40)});
-            width: opt(40);
-            height: opt(40);
+            top: calc(-1 * #{opt(35)});
+            width: opt(35);
+            height: opt(35);
             &__right,
             &__left {
                 width: 2px;
