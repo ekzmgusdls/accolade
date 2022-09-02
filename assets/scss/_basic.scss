@@ -202,7 +202,6 @@ sup {
     .video-container {
         position: relative;
         width: 89%;
-        bottom: opt(80);
     }
     .video-exit {
         position: absolute;
@@ -289,6 +288,7 @@ sup {
         background: rgba(0, 0, 0, 0.85);
         .video-container {
             width: 100%;
+            bottom: opt(80);
         }
 
         .video-exit {
