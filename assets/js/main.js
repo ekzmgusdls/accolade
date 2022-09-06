@@ -5,7 +5,7 @@ addEventListener('DOMContentLoaded', () => {
         autoScrolling: true,
         scrollHorizontally: true,
         scrollingSpeed: 700,
-        anchors: ['home', 'brand', 'fortuna', 'virtu', 'architect', 'location', 'gallery'],
+        anchors: ['home', 'video', 'brand', 'fortuna', 'virtu', 'architect', 'location', 'gallery'],
         menu: '.nav',
         slidesNavigation: true,
         licenseKey: '9FC70B70-EE3A4072-95F27451-A24A1E71',
@@ -55,10 +55,10 @@ addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            if (destination.anchor !== 'home') {
-                $('#video').stop();
-                $('#video').fadeOut();
-            }
+            // if (destination.anchor !== 'home') {
+            //     $('#video').stop();
+            //     $('#video').fadeOut();
+            // }
         },
 
         afterRender: function () {
@@ -89,16 +89,16 @@ addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    setTimeout(function () {
-        $('#video')
-            .css('display', 'flex')
-            .hide()
-            .fadeIn(1200, function () {
-                $('.video-exit').click(() => {
-                    $('#video').stop().fadeOut(800);
-                });
-            });
-    }, 4000);
+    // setTimeout(function () {
+    //     $('#video')
+    //         .css('display', 'flex')
+    //         .hide()
+    //         .fadeIn(1200, function () {
+    //             $('.video-exit').click(() => {
+    //                 $('#video').stop().fadeOut(800);
+    //             });
+    //         });
+    // }, 4000);
 
     // makeVideoResponsible();
     addEventListener('resize', () => {
