@@ -11,6 +11,19 @@
             // p {
             //     font-size: opt(21);
             // }
+            display: flex;
+            .text {
+                width: 40%;
+                position: relative;
+                bottom: 4vw;
+                z-index: 1;
+                p {
+                    margin-bottom: 1.5vw;
+                }
+            }
+            .bottom-title {
+                z-index: 2;
+            }
         }
     }
     footer {
@@ -55,11 +68,15 @@
                 padding-bottom: opt(100);
                 justify-content: center;
 
+                .text {
+                    width: 100%;
+                    p {
+                        font-size: opt(16);
+                        margin-bottom: 10vw;
+                    }
+                }
                 h2 {
                     font-size: opt(24);
-                }
-                p {
-                    font-size: opt(16);
                 }
             }
             footer {

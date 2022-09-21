@@ -117,4 +117,8 @@ addEventListener('DOMContentLoaded', () => {
             $('#mobile-nav').fadeOut();
         });
     });
+
+    $('.pop-up').click(() => {
+        $('.pop-up-container').fadeOut();
+    });
 });

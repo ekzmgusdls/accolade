@@ -1,0 +1,44 @@
+.pop-up-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+.pop-up {
+    position: fixed;
+    z-index: 99;
+    width: 500px;
+    left: 15px;
+    top: 15px;
+    height: auto;
+    img {
+        width: 100%;
+    }
+    .exit {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 17px;
+        top: 17px;
+        cursor: pointer;
+    }
+}
+
+@include mobile() {
+    .pop-up {
+        width: 100%;
+        padding: 3vw;
+        left: 0;
+        top: 0;
+        .exit {
+            top: 7vw;
+            right: 7vw;
+            width: 5.5vw;
+            height: 5.5vw;
+        }
+    }
+}
