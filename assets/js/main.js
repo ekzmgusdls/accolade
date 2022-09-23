@@ -118,7 +118,9 @@ addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    $('.pop-up').click(() => {
-        $('.pop-up-container').fadeOut();
+    $('.pop-up-container').click((e) => {
+        if ($(e.target).hasClass('pop-up-container') || $(e.target).hasClass('exit')) {
+            $('.pop-up-container').fadeOut();
+        }
     });
 });

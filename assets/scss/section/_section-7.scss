@@ -1,9 +1,10 @@
 .section {
     &--7 {
-        background-image: url('../src/6_1.jpg');
-
         .section__content {
-            padding: opt(100);
+            padding: 0;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            width: 100vw;
             text-align: center;
             // h2 {
             //     font-size: opt(36);
@@ -12,17 +13,36 @@
             //     font-size: opt(21);
             // }
             display: flex;
-            .text {
-                width: 40%;
-                position: relative;
-                bottom: 4vw;
-                z-index: 1;
-                p {
-                    margin-bottom: 1.5vw;
+            flex-direction: column;
+            gap: opt(40);
+            .top-container {
+                width: 100%;
+                display: flex;
+                flex: 1;
+                .left-container {
+                    width: 30%;
+                    padding: opt(100);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: opt(30);
+                    img {
+                        width: 80%;
+                    }
+                }
+                .right-container {
+                    width: 70%;
+                    background-size: cover;
+                    background-image: url('../src/gallery-map.svg');
+                    background-position: center right;
                 }
             }
+
             .bottom-title {
+                position: static;
                 z-index: 2;
+                padding-bottom: opt(40);
             }
         }
     }
@@ -64,24 +84,46 @@
         &--7 {
             background-position: left 23% center;
             .section__content {
-                padding: opt(20);
-                padding-bottom: opt(100);
+                padding: 0;
                 justify-content: center;
+                min-height: 100vh;
+                min-height: -webkit-fill-available;
+                flex-direction: column;
+                .top-container {
+                    display: flex;
+                    flex-direction: column;
+                    .left-container {
+                        width: 100%;
+                        padding: opt(20);
+                        padding-top: opt(40);
+                        flex: 1;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .right-container {
+                        flex: 3;
+                        width: 100%;
+                    }
+                }
 
                 .text {
-                    width: 100%;
                     p {
                         font-size: opt(16);
-                        margin-bottom: 10vw;
                     }
                 }
                 h2 {
                     font-size: opt(24);
                 }
+
+                .bottom-title {
+                    padding-bottom: opt(20);
+                }
             }
+
             footer {
                 font-size: opt(7);
-                margin-top: opt(40);
+                margin-top: opt(20);
                 .footer-left {
                     width: 65%;
                 }

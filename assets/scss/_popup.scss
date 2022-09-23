@@ -5,15 +5,17 @@
     top: 0;
     left: 0;
     z-index: 999;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
 }
 .pop-up {
     position: fixed;
     z-index: 99;
-    width: 500px;
-    left: 15px;
-    top: 15px;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     height: auto;
     img {
         width: 100%;
@@ -29,14 +31,25 @@
 }
 
 @include mobile() {
+    .pop-up-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12vw;
+        width: 100vw;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        display: none;
+    }
     .pop-up {
+        position: relative;
+        transform: none;
         width: 100%;
-        padding: 3vw;
-        left: 0;
-        top: 0;
+        left: auto;
+        top: auto;
         .exit {
-            top: 7vw;
-            right: 7vw;
+            top: 3vw;
+            right: 3vw;
             width: 5.5vw;
             height: 5.5vw;
         }
