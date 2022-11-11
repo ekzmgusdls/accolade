@@ -1,0 +1,122 @@
+.page-id-73 {
+    .section {
+        &--main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1 {
+                height: auto;
+                margin-bottom: opt(40);
+            }
+        }
+        &--nature {
+            padding: opt(150) opt(50);
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            align-items: center;
+            .img {
+                aspect-ratio: 1.5;
+                width: opt(1250);
+            }
+        }
+        &--city {
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            align-items: center;
+            .img {
+                aspect-ratio: 1.78;
+                width: opt(1250);
+            }
+        }
+        &--nature-city-view {
+            padding-top: opt(150);
+            .text {
+                margin-bottom: opt(50);
+            }
+
+            .img {
+                aspect-ratio: 4.8;
+                width: 100%;
+            }
+        }
+        &--location {
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            align-items: center;
+            .img {
+                aspect-ratio: 1;
+                width: 100%;
+            }
+        }
+    }
+    footer {
+        margin-top: 0;
+    }
+}
+
+@include mobile() {
+    .page-id-73 {
+        .section {
+            &--nature {
+                grid-template-columns: 1fr;
+                padding-right: 0;
+                padding-left: opt(85);
+                padding-top: opt(60);
+                padding-bottom: opt(60);
+                .img {
+                    order: 1;
+                    width: 100%;
+                }
+                .text {
+                    order: 2;
+                    padding-left: opt(100);
+                    padding-bottom: 0;
+                }
+            }
+            &--city {
+                grid-template-columns: 1fr;
+                .img {
+                    width: 100%;
+                }
+                .text {
+                    padding: opt(30);
+                    padding-top: opt(20);
+                }
+            }
+
+            &--nature-city-view {
+                padding-top: opt(20);
+                display: grid;
+                grid-template-columns: 1fr;
+
+                .img {
+                    order: 1;
+                    aspect-ratio: 2.4;
+                    background-size: cover;
+                    background-position: left;
+                }
+                .text {
+                    order: 2;
+                    text-align: center;
+                    margin-bottom: opt(20);
+                }
+            }
+            &--location {
+                grid-template-columns: 1fr;
+                .img {
+                    order: 1;
+                }
+                .text {
+                    order: 2;
+                    text-align: center;
+                    padding-bottom: opt(30);
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

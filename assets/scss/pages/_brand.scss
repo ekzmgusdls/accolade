@@ -1,0 +1,286 @@
+.section {
+    .section-row {
+        padding: opt(100);
+    }
+    &--video {
+        iframe {
+            width: 100%;
+        }
+    }
+
+    &--in-art {
+        .section-row {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            align-items: center;
+            .img {
+                width: opt(517);
+                aspect-ratio: 0.58;
+            }
+            .img-caption {
+                text-align: center;
+                padding: opt(15);
+            }
+        }
+    }
+
+    &--in-architecture {
+        .section-row {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            align-items: center;
+            .img {
+                width: opt(517);
+                aspect-ratio: 0.58;
+            }
+        }
+    }
+
+    &--in-music {
+        .section-row {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            align-items: center;
+            .img {
+                width: opt(517);
+                aspect-ratio: 0.58;
+            }
+        }
+    }
+
+    &--philosophy {
+        .section-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            .text {
+                text-align: left;
+            }
+            .img {
+                width: opt(860);
+                aspect-ratio: 0.97;
+            }
+        }
+    }
+    &--code-identity,
+    &--identity-combination,
+    &--value-difference {
+        padding: opt(40);
+
+        h2 {
+            text-align: center;
+            padding: opt(7);
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+
+        &__body {
+            text-align: center;
+            padding-top: opt(40);
+
+            h2 {
+                border: 0;
+            }
+        }
+    }
+
+    &--code-identity,
+    &--identity-combination {
+        &__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    &--value-difference {
+        margin-bottom: opt(60);
+    }
+}
+
+@include mobile() {
+    .section {
+        .section-row {
+            padding: opt(30) 0;
+        }
+        &--video {
+            padding-top: opt(30);
+        }
+        &--in-art {
+            .section-row {
+                grid-template-columns: 1fr 1fr;
+                .text {
+                    order: 2;
+                    padding: opt(20);
+                    text-align: left;
+                    align-self: flex-start;
+                    padding-top: 0;
+
+                    br {
+                        display: none;
+                        &.mobile-br {
+                            display: block;
+                        }
+                    }
+                }
+                .img-container {
+                    order: 1;
+
+                    .img {
+                        width: 100%;
+                    }
+                    .img-caption {
+                        font-size: opt(5);
+                    }
+                }
+            }
+        }
+
+        &--in-architecture {
+            .section-row {
+                &--1 {
+                    grid-template-columns: 2.5fr 1.6fr;
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                        order: 2;
+                    }
+                    .text {
+                        order: 1;
+                        align-self: flex-start;
+                        padding-top: 0;
+                        br {
+                            display: none;
+                            &.mobile-br {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--in-music {
+            .section-row {
+                grid-template-columns: 4.5fr 5.5fr;
+                .img {
+                    width: 100%;
+                    order: 1;
+                }
+                .text {
+                    order: 2;
+                    align-self: end;
+                    padding-bottom: 0;
+                    p {
+                        br {
+                            display: none;
+                            &.mobile-br {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--philosophy {
+            .section-row {
+                grid-template-columns: 1fr;
+                .text {
+                    p {
+                        br {
+                            display: none;
+                            &.mobile-br {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                svg {
+                    padding: 0 opt(20);
+                    width: 100%;
+                }
+                .img {
+                    margin-left: opt(20);
+                    margin-right: opt(20);
+                    width: calc(100vw - #{opt(40)});
+                }
+                &--1 {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        &--code-identity {
+            padding: opt(20);
+            h2 {
+                margin: 0;
+            }
+
+            &__body {
+                grid-template-columns: 1fr;
+                padding-top: 0;
+                .column {
+                    padding-top: opt(20);
+                    padding-bottom: opt(20);
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+
+        &--identity-combination {
+            padding: opt(20);
+            h2 {
+                margin-bottom: 0;
+            }
+            &__body {
+                padding: 0;
+                grid-template-columns: 1fr;
+                .column {
+                    padding: opt(20);
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+
+        &--value-difference {
+            padding: opt(20);
+            margin-bottom: opt(20);
+            h2 {
+                margin-bottom: 0;
+            }
+            &__body {
+                padding-top: opt(20);
+            }
+        }
+    }
+
+    #philosophy {
+        .footer-bottom-title {
+            .en {
+                font-size: opt(18);
+                border: 0;
+                margin-bottom: opt(10);
+            }
+
+            .ko {
+                font-size: opt(13);
+                border: 0;
+                margin-bottom: opt(25);
+            }
+        }
+    }
+
+    .page-id-71 {
+        .footer-bottom-title {
+            padding: opt(20);
+            padding-bottom: 0;
+            .en {
+                font-size: opt(18);
+                border: 0;
+                margin-bottom: opt(10);
+            }
+
+            .ko {
+                font-size: opt(13);
+                border: 0;
+            }
+        }
+    }
+}

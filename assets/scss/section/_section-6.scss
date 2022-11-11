@@ -1,0 +1,40 @@
+.section {
+    &--6 {
+        .section__content {
+            height: 100%;
+            align-items: center;
+        }
+        .mxm-left-container {
+            background-image: url('../src/6_map_pc.jpg');
+            height: 100%;
+            width: 55%;
+            aspect-ratio: 1;
+            background-size: cover;
+        }
+        .mxm-right-container {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@include mobile {
+    .section {
+        &--6 {
+            .section__content {
+                padding: 0;
+            }
+            .mxm-left-container {
+                width: 100%;
+                background-image: url('../src/6_map_mb.jpg');
+                aspect-ratio: auto;
+            }
+            .mxm-right-container {
+                position: absolute;
+                bottom: opt(30);
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+}

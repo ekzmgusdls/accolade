@@ -1,0 +1,37 @@
+.page-id-79 {
+    .section {
+        &--map-contact {
+            height: 100vh;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            align-items: center;
+            .img {
+                height: 100%;
+            }
+        }
+    }
+    footer {
+        margin-top: 0;
+    }
+}
+
+@include mobile() {
+    .page-id-79 {
+        .section {
+            &--map-contact {
+                grid-template-columns: 1fr;
+                min-height: 0;
+                height: auto;
+                .text {
+                    text-align: center;
+                }
+                .img {
+                    aspect-ratio: 1;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

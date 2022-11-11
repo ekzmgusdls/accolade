@@ -1,0 +1,180 @@
+.page-id-130 {
+    .section {
+        &--main {
+            background-size: 200%;
+            background-position: center top;
+            background-repeat: repeat;
+        }
+        &--instagram {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding: opt(75);
+            align-items: center;
+            height: 100vh;
+
+            .img {
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--fritz-hansen {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            .text {
+                padding-top: opt(170);
+                padding-left: opt(150);
+                padding-right: opt(150);
+                padding-bottom: opt(170);
+
+                &__description {
+                    margin-top: opt(200);
+                    text-align: left;
+                }
+            }
+
+            .chair {
+                aspect-ratio: 0.56;
+                width: opt(97);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                margin-bottom: opt(60);
+            }
+
+            .img {
+                background-size: cover;
+                &.mobile-show {
+                    display: none;
+                }
+            }
+        }
+
+        &--leeseongsoo {
+            padding-top: opt(170);
+            padding-bottom: opt(120);
+            display: flex;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 4.5fr 6.5fr;
+            justify-content: center;
+            align-items: center;
+            .mobile-show {
+                display: none;
+            }
+            .text {
+                max-width: opt(400);
+                margin: 0 auto;
+                word-break: keep-all;
+            }
+            .img {
+                width: 100%;
+                aspect-ratio: 1.08;
+            }
+
+            .records {
+                margin-top: opt(50);
+                border-bottom: 1px solid white;
+                text-align: left;
+                .record {
+                    padding-top: opt(20);
+                    padding-bottom: opt(40);
+                    border-top: 1px solid white;
+                    h3 {
+                        margin-bottom: opt(30);
+                    }
+                    &__row {
+                        display: grid;
+                        grid-template-columns: opt(50) 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile() {
+    .page-id-130 {
+        .section {
+            &--instagram {
+                padding: 0;
+                height: auto;
+                grid-template-columns: 1.2fr 1fr;
+                padding: opt(60) 0;
+                .img {
+                    aspect-ratio: 0.35;
+                    height: auto;
+                    background-size: 140%;
+                    background-position: left;
+                }
+                .text {
+                    br {
+                        display: none;
+
+                        &.mobile-br {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &--fritz-hansen {
+                grid-template-columns: 1fr;
+                .text {
+                    padding: opt(20) opt(65);
+                    text-align: center;
+                    p {
+                        margin-bottom: opt(40);
+                    }
+                    .chair {
+                        margin: 0 auto;
+                        margin-bottom: opt(20);
+                        width: opt(45);
+                    }
+
+                    &__description {
+                        margin-top: 0;
+                    }
+                }
+                .img {
+                    display: none;
+                    &.mobile-show {
+                        display: block;
+                        width: 100%;
+                        aspect-ratio: 0.75;
+                        margin-bottom: opt(40);
+                    }
+                }
+            }
+            &--leeseongsoo {
+                grid-template-columns: 1fr;
+                padding: opt(20) opt(55);
+                padding-bottom: opt(100);
+
+                .text {
+                    text-align: center;
+                    p {
+                        margin-bottom: opt(40);
+                    }
+                }
+
+                .records {
+                    .record {
+                        padding: opt(20) 0;
+                        font-size: opt(13);
+                        h3 {
+                            margin-bottom: opt(10);
+                        }
+                    }
+                }
+                .img {
+                    display: none;
+                }
+                .mobile-show {
+                    display: block;
+                }
+            }
+        }
+    }
+}

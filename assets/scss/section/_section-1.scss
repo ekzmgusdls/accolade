@@ -1,0 +1,114 @@
+$animation-duration: 7s;
+.section {
+    &--1 {
+        .section__back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            background: black;
+            animation: backshow $animation-duration forwards;
+            opacity: 1;
+        }
+        .section__content {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            padding: opt(40);
+            align-items: flex-end;
+            position: relative;
+        }
+        .left-bar {
+            width: opt(30);
+            height: 0;
+            background: white;
+            animation: barup ease $animation-duration forwards;
+        }
+        .right-bar {
+            height: 0;
+            width: opt(30);
+            background: white;
+            animation: barup ease $animation-duration forwards;
+        }
+        .bottom-arrow {
+            position: absolute;
+            bottom: opt(30);
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: arrowshow ease $animation-duration forwards;
+            width: 80px;
+            img {
+                width: 100%;
+            }
+        }
+        .main-logo {
+            width: opt(300);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            animation: logoshow $animation-duration forwards;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes barup {
+    30% {
+        height: 0;
+    }
+    55%,
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes logoshow {
+    30%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes backshow {
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes arrowshow {
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include mobile {
+    .section {
+        &--1 {
+            .section__content {
+                padding: opt(20);
+            }
+            .left-bar,
+            .right-bar {
+                width: opt(20);
+            }
+            .main-logo {
+                width: opt(255);
+            }
+            .bottom-arrow {
+                width: opt(70);
+            }
+        }
+    }
+}

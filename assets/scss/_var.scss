@@ -1,0 +1,21 @@
+// 1920 비율의 pt값을 계산해서 가져오도록 하는 function
+:root {
+    --viewport-width: 1920;
+}
+
+@mixin mobile {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@include mobile {
+    :root {
+        --viewport-width: 428;
+    }
+}
+
+@function opt($num) {
+    $result: calc($num / var(--viewport-width) * 100vw);
+    @return $result;
+}

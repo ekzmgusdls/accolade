@@ -1,0 +1,452 @@
+.register-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+
+    &--error {
+        color: yellow;
+    }
+}
+
+.register {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 96;
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    display: none;
+
+    border: 1px solid white;
+    background: black;
+    font-size: 11px;
+    transition: transform 1s;
+    cursor: pointer;
+    &__trigger {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__en {
+        font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+        border: 1px solid white;
+        background: black;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .left,
+        .right {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            background: white;
+        }
+        .left {
+            transform: rotate(45deg);
+        }
+
+        .right {
+            transform: rotate(135deg);
+        }
+    }
+}
+
+.register-popup {
+    position: fixed;
+    max-height: calc(100vh - 100px);
+    overflow: scroll;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    font-size: 12px;
+    width: 705px;
+    padding: 30px;
+    background: black;
+    display: none;
+    grid-template-columns: 30px 1fr 30px;
+    gap: 50px;
+
+    &__title {
+        text-align: center;
+        font-size: 34px;
+        font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
+        margin-bottom: 50px;
+    }
+    &__description {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 15px;
+        word-break: keep-all;
+    }
+
+    &__exit {
+        position: absolute;
+        top: 30px;
+        right: 90px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: transform 0.5s;
+        .exit-left,
+        .exit-right {
+            height: 1px;
+            width: 100%;
+            background: white;
+            position: absolute;
+            top: 50%;
+        }
+
+        .exit-left {
+            transform: rotate(45deg);
+        }
+        .exit-right {
+            transform: rotate(135deg);
+        }
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__left,
+    &__right {
+        background: white;
+        width: 30px;
+        height: 100%;
+    }
+
+    &__main {
+        .hypen {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            &__bar {
+                height: 1px;
+                width: 100%;
+                background: white;
+            }
+        }
+        .phone-number {
+            display: flex;
+
+            #phone {
+                border: 1px solid white;
+                background: transparent;
+                border-radius: 0;
+                color: white;
+                width: calc(80% / 3);
+                padding: 10px;
+                appearance: none;
+                -webkit-appearance: none;
+            }
+            span {
+                width: 10%;
+            }
+
+            input {
+                width: calc(80% / 3);
+                color: white;
+                padding: 10px;
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 225px;
+            }
+        }
+
+        .form-01 {
+            font-size: 24px;
+            display: grid;
+            gap: 20px;
+            margin-bottom: 70px;
+            &__row {
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                input {
+                    border: 1px solid white;
+                    background: transparent;
+                    border-radius: 0;
+                    color: white;
+                    padding: 5px 10px;
+                    height: 42px;
+                    font-size: 20px;
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+
+                #phone {
+                    font-size: 20px;
+                    height: 42px;
+                    padding: 5px 10px;
+                    background-image: url('../src/select-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: 20%;
+                    background-position-x: 90%;
+                    background-position-y: 50%;
+                    &:focus {
+                        border-radius: 0;
+                    }
+                }
+            }
+            #error-content {
+                display: none;
+            }
+        }
+
+        .register-informs {
+            border-bottom: 1px solid white;
+            margin-bottom: 40px;
+            .register-inform {
+                border-top: 1px solid white;
+                display: grid;
+                padding: 10px 0;
+                grid-template-columns: 0.7fr 1fr;
+            }
+        }
+        .register-questions {
+            margin-bottom: 70px;
+            line-height: 1.7;
+            .register-question {
+                display: grid;
+                grid-template-columns: 2fr 0.35fr 0.6fr;
+                &--allyes {
+                    grid-template-columns: 4fr 1fr;
+                    align-items: end;
+                    margin-top: 30px;
+                }
+                .answer {
+                    label {
+                        text-align: right;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+        button {
+            border: 1px solid white;
+            border-radius: 0;
+            background: black;
+            font-size: 24px;
+            color: white;
+            width: 230px;
+            padding: 5px 0;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 40px;
+            &:disabled {
+                color: gray;
+                &:hover {
+                    background: inherit;
+                    color: gray;
+                    cursor: no-drop;
+                }
+            }
+            &:hover {
+                background: white;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .checkbox {
+        border: 1px solid white;
+        width: 10px;
+        height: 10px;
+    }
+
+    .hidden:checked + .checkbox {
+        background: white;
+    }
+}
+
+.mobile-wrap {
+    display: none;
+}
+
+@include mobile() {
+    .register-popup {
+        top: 0;
+        width: 100vw;
+        padding: 18px;
+        left: 0;
+        transform: none;
+        grid-template-columns: 15px 1fr 15px;
+        grid-gap: 20px;
+        overflow: scroll;
+        padding-bottom: 40px;
+        font-size: 12px;
+
+        height: 100%;
+        max-height: 100%;
+        min-height: -webkit-fill-available;
+
+        &__left,
+        &__right {
+            width: 15px;
+        }
+        &__main {
+            width: 100%;
+            button {
+                font-size: 15px;
+                font-weight: 400;
+                width: 150px;
+                padding: 8px;
+            }
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__description {
+            font-size: 12px;
+        }
+        &__exit {
+            top: 20px;
+            right: 60px;
+            width: 25px;
+            height: 25px;
+        }
+        .img-container {
+            width: auto;
+            img {
+                width: 150px;
+            }
+        }
+
+        .phone-number {
+            display: grid;
+            grid-template-columns: 1fr 20px 1fr 20px 1fr;
+            #phone {
+                width: 100%;
+                display: block;
+                font-size: 15px;
+            }
+            input {
+                width: 100%;
+                font-size: 15px;
+            }
+            span {
+                width: 100%;
+                padding: 5px;
+            }
+        }
+        .form-01 {
+            width: 100%;
+            overflow: hidden;
+            font-size: 18px;
+            &__row {
+                width: 100%;
+                display: grid;
+
+                grid-template-columns: 60px 1fr;
+                overflow: hidden;
+                label {
+                    font-size: 12px;
+                }
+                input[name='name'] {
+                    width: 100%;
+                }
+                #phone {
+                    height: 32px;
+                    font-size: 12px;
+                }
+                input {
+                    font-size: 12px;
+                    height: 32px;
+                }
+            }
+        }
+
+        .register-informs {
+            .register-inform {
+                gap: 25px;
+                grid-template-columns: 0.5fr 1fr;
+                font-size: 10px;
+                &__title {
+                    word-break: keep-all;
+                }
+            }
+        }
+        .register-questions {
+            font-size: 10px;
+            .register-question {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                gap: 5px;
+                margin-bottom: 10px;
+                .question {
+                    width: 100%;
+                }
+                .answer {
+                    &--yes {
+                        margin-right: 15px;
+                    }
+                }
+                &--allyes {
+                    max-width: 200px;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    .register {
+        width: 80px;
+        height: 80px;
+        right: 17px;
+        bottom: 27px;
+        &__trigger {
+            font-size: 9px;
+        }
+        &__close {
+            top: -5px;
+            right: 4px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+    .mobile-wrap {
+        display: block;
+    }
+}
