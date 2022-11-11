@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
+
 <main id="fullpage">
     <section class="section fp-auto-height-responsive section--1">
         <div class="section__back"></div>

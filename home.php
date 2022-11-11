@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 
 
 <main id="fullpage">
@@ -56,7 +56,7 @@
                     진정으로 성공한 것이다.<br /><br />
                     -어니스트 헤밍웨이-<br /><br />
                     <a class='view-more' href='<?= get_permalink( get_page_by_path( 'brand' ) )?>'>
-                        View More
+                        VIEW MORE
                     </a>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     </p>
                     <br>
                     <a class='view-more' href='<?= get_permalink( get_page_by_path( 'fortuna' ) )?>'>
-                        View More
+                        VIEW MORE
                     </a>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                     </p>
                     <br>
                     <a class='view-more' href='<?= get_permalink( get_page_by_path( 'virtu' ) )?>'>
-                        View More
+                        VIEW MORE
                     </a>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                     </p>
                     <br>
                     <a class='view-more' href='<?= get_permalink( get_page_by_path( 'architect' ) )?>'>
-                        View More
+                        VIEW MORE
                     </a>
                 </div>
             </div>
@@ -144,7 +144,7 @@
                         </p>
                         <br>
                         <a class='view-more' href='<?= get_permalink( get_page_by_path( 'gallery' ) )?>'>
-                            View More
+                            VIEW MORE
                         </a>
                     </div>
                     <!-- <img src="./assets/src/gallery-map.svg" alt="" /> -->

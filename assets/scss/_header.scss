@@ -14,11 +14,11 @@
     font-family: aktiv-grotesk-extended, helvetica, arial, sans-serif;
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3023255813953488) 100%);
+    font-size: opt(18);
 
     .menu-trigger-container {
         display: flex;
         gap: 10px;
-        font-size: opt(12);
 
         .menu-trigger {
             cursor: pointer;
@@ -36,7 +36,6 @@
         display: flex;
         gap: opt(20);
         li {
-            font-size: opt(12);
             &.active {
                 border-bottom: opt(2) solid white;
             }
@@ -44,7 +43,8 @@
     }
 
     .logo {
-        width: opt(140);
+        padding-top: opt(5);
+        width: opt(180);
 
         img,
         a {

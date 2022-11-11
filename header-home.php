@@ -106,7 +106,13 @@ if($_GET['submit'] == 'already-exists'){
         </ul>
         <div class="right-bar"></div>
     </div> -->
-
+    <div class="pop-up-container">
+        <div class="pop-up">
+            <img src="<?= get_template_directory_uri()?>/assets/src/popup.jpeg
+                " alt="" />
+            <div class="exit"></div>
+        </div>
+    </div>
     <div class="register">
         <div class="register__trigger">
             <div class="register__en">REGISTER</div>

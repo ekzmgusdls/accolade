@@ -272,7 +272,19 @@ sup {
             }
         }
         a {
-            text-decoration: underline;
+            display: inline-block;
+            padding: opt(8) opt(20);
+            text-decoration: none;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            min-width: opt(150);
+            margin-top: opt(70);
+            background-color: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(10px);
+            transition: background-color 0.2s;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.4);
+            }
         }
         .slide {
             height: 1px;
@@ -354,6 +366,10 @@ footer {
 
 .mobile-br {
     display: none;
+}
+
+.home {
+    overflow: hidden;
 }
 
 @include mobile() {

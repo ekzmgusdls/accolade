@@ -52,131 +52,22 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    // new fullpage('#fullpage', {
-    //     autoScrolling: false,
-    //     scrollingSpeed: 700,
-    //     anchors: ['home', 'video', 'brand', 'fortuna', 'virtu', 'architect', 'location', 'gallery'],
-    //     menu: '.nav',
-    //     slidesNavigation: true,
-    //     licenseKey: '9FC70B70-EE3A4072-95F27451-A24A1E71',
-    //     scrollHorizontallyKey: 'YWNjb2xhZGUxMDA5LmNvbV85MFNjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDVuQ0U=',
-    //     responsiveWidth: '800px',
-    //     scrollHorizontally: true,
-    //     normalScrollElements: '.register-popup',
-    //     afterLoad: function (origin, destination, direction, trigger) {
-    //         var origin = this;
-    //         // 웹인 경우
-    //         if (innerWidth > mobileWidthStd) {
-    //             if (direction === 'down') {
-    //                 if ($('#header').css('display') !== 'flex') {
-    //                     $('#header').css('display', 'flex').hide().fadeIn();
-    //                 }
-    //             } else {
-    //             }
-    //         }
-    //         // 모바일인 경우
-    //         if (innerWidth <= mobileWidthStd) {
-    //             if (direction !== 'down') {
-    //                 return;
-    //             }
-
-    //             if ($('#mobile-header').css('display') !== 'flex') {
-    //                 $('#mobile-header').css('display', 'flex').hide().fadeIn();
-    //             }
-    //         }
-    //     },
-    //     onLeave: function (origin, destination, direction, trigger) {
-    //         var origin = this;
-    //         if ($('.register').length >= 1) {
-    //             if (destination.anchor == 'gallery') {
-    //                 $('.register').fadeOut();
-    //             } else {
-    //                 $('.register').fadeIn();
-    //             }
-    //         }
-
-    //         // 웹인 경우
-    //         if (innerWidth > mobileWidthStd) {
-    //             if (direction === 'down') {
-    //             } else {
-    //                 if (origin.index === 1) {
-    //                     $('#header').fadeOut();
-    //                     if ($('.register').length >= 1) {
-    //                         $('.register').fadeIn();
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         // 모바일인 경우
-    //         if (innerWidth <= mobileWidthStd) {
-    //             if (direction === 'down') {
-    //             } else {
-    //                 if (origin.index === 1) {
-    //                     $('#mobile-header').fadeOut();
-    //                     if ($('.register').length >= 1) {
-    //                         $('.register').fadeOut();
-    //                     }
-    //                 }
-    //             }
-    //         }
-
-    //         // if (destination.anchor !== 'home') {
-    //         //     $('#video').stop();
-    //         //     $('#video').fadeOut();
-    //         // }
-    //     },
-
-    //     afterRender: function () {
-    //         const swiper = new Swiper('.gallery', {
-    //             // Optional parameters
-    //             effect: 'fade',
-
-    //             direction: 'horizontal',
-    //             loop: true,
-
-    //             // If we need pagination
-    //             pagination: {
-    //                 el: '.swiper-pagination',
-    //                 clickable: true,
-    //             },
-
-    //             // Navigation arrows
-    //             navigation: {
-    //                 nextEl: '.swiper-button-next',
-    //                 prevEl: '.swiper-button-prev',
-    //             },
-
-    //             // And if we need scrollbar
-    //             scrollbar: {
-    //                 el: '.swiper-scrollbar',
-    //             },
-    //         });
-    //     },
-    // });
-
-    // setTimeout(function () {
-    //     $('#video')
-    //         .css('display', 'flex')
-    //         .hide()
-    //         .fadeIn(1200, function () {
-    //             $('.video-exit').click(() => {
-    //                 $('#video').stop().fadeOut(800);
-    //             });
-    //         });
-    // }, 4000);
-
-    adjustIframeRatio();
-
-    // $('#mobile-header .menu-button').click(() => {
-    //     $('#mobile-nav').css('display', 'flex').hide().fadeIn();
-    //     $('#mobile-nav').click(() => {
-    //         $('#mobile-nav').fadeOut();
-    //     });
-    // });
+    function sessionForPopup() {
+        console.log(sessionStorage.getItem('popupBoolean'));
+        if (sessionStorage.getItem('popupBoolean')) {
+            $('.pop-up-container').remove();
+            $('body').css('overflow', 'auto');
+        }
+    }
 
     $('.pop-up-container').click((e) => {
         if ($(e.target).hasClass('pop-up-container') || $(e.target).hasClass('exit')) {
             $('.pop-up-container').fadeOut();
+            $('body').css('overflow', 'auto');
+
+            if (!sessionStorage.getItem('popupBoolean')) {
+                sessionStorage.setItem('popupBoolean', true);
+            }
         }
     });
 
@@ -373,6 +264,7 @@ jQuery(document).ready(function ($) {
         }
     }
 
+    adjustIframeRatio();
     headerToggle();
     playVideo();
     menuShow();
@@ -381,6 +273,7 @@ jQuery(document).ready(function ($) {
     currentHashMenu();
     architectureWorksZoom();
     homeMobileHeader();
+    sessionForPopup();
 
     $(document).resize(function (e) {
         adjustIframeRatio();

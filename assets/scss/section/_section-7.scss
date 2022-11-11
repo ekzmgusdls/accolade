@@ -104,10 +104,14 @@
                         .text {
                             text-align: center;
                         }
+                        .view-more {
+                            margin-bottom: opt(50);
+                        }
                     }
                     .right-container {
                         flex: 3;
                         width: 100%;
+                        aspect-ratio: 1.52;
                     }
                 }
 
