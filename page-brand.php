@@ -17,16 +17,16 @@ $count = 0;
         <section class="section section--in-art">
             <div class="section-row section-row--1">
                 <div class="text">
-                    <h2>ACCOLADE <br class="mobile-br"> IN ART</h2>
+                    <h2>ACCOLADE 1009 <br class="mobile-br"> IN ART</h2>
                     <p>
 
                         본래 ‘기사작위수여식‘을 뜻하던 ‘ACCOLADE’는<br>
                         영예, 상, 칭찬의 뜻으로 확장되어 사용되고 있습니다.<br>
-                        아클래드라는 이름의 이 그림은 기사작위수여식을 표현합니다.
+                        아클래드 1009라는 이름의 이 그림은 기사작위수여식을 표현합니다.
                         <br><br>
                         <br class='mobile-br'>
                         <br class='mobile-br'>
-                        ACCOLADE 1009는 하나하나 쌓여진 차이로 만들어낸 당신을 증명하는 차이입니다.
+                        COLADE 1009의 차이가 하나하나 쌓여 당신을 증명합니다.
                     </p>
                 </div>
                 <div class="img-container">
@@ -42,7 +42,7 @@ $count = 0;
             <div class="section-row section-row--1">
                 <div class="img" <?php mxmImg()?>></div>
                 <div class="text">
-                    <h2>ACCOLADE <br class="mobile-br"> IN ARCHITECTURE</h2>
+                    <h2>ACCOLADE 1009 <br class="mobile-br"> IN ARCHITECTURE</h2>
                     <p>
                         ACCOLADE는 후기 고딕 건축에서 일반적으로 발견되는 Ogee Arch를 의미합니다. <br>정점에서 두개의 S자 커브가 만나 대칭적인 아치를 이루는 Ogee arch는
                         <br>후기 고딕 건축에서 교회, 수도원 등의 출입구와 창문 등의 <br>
@@ -55,7 +55,7 @@ $count = 0;
         <section class="section section--in-music">
             <div class="section-row section-row--1">
                 <div class="text">
-                    <h2>ACCOLADE <br class="mobile-br"> IN MUSIC</h2>
+                    <h2>ACCOLADE 1009 <br class="mobile-br"> IN MUSIC</h2>
                     <p>
                         음악에 있어 ‘ACCOLADE’란 피아노, <br>
                         하프 등의 악기를 연주할 때, <br>
@@ -80,7 +80,7 @@ $count = 0;
             <div class="section-row section-row--1">
                 <div class="text">
                     <h2>PHILOSOPHY</h2>
-                    <p>아클래드는<br>
+                    <p>아클래드 1009는<br>
                         Design, Timeless, Lifestyle 세가지 요소와<br><br class="mobile-br">
                         그 조합을 통해 가치와 차이를 가진<br>
                         주거공간을 만듭니다.
@@ -93,7 +93,7 @@ $count = 0;
         <section>
             <div class="footer-bottom-title">
                 <div class="en letter-space-wide">PROVE YOUR DIFFERENCE</div>
-                <div class="ko">아클래드는 하나하나 쌓여진 가치로 만들어낸 <br class="mobile-br"> 당신을 증명하는 차이입니다.</div>
+                <div class="ko">아클래드 1009는 하나하나 쌓여진 가치로 만들어낸 <br class="mobile-br"> 당신을 증명하는 차이입니다.</div>
             </div>
         </section>
         <section class="section section--code-identity">
@@ -176,7 +176,7 @@ $count = 0;
             </h2>
             <div class="section--value-difference__body ">
                 <h2>
-                    아클래드는 하나하나 쌓여진 가치로 만들어낸 당신을 증명하는 차이입니다.
+                    아클래드 1009는 하나하나 쌓여진 가치로 만들어낸 당신을 증명하는 차이입니다.
                 </h2>
             </div>
         </section>
@@ -185,6 +185,6 @@ $count = 0;
 </main>
 <div class="footer-bottom-title">
     <div class="en letter-space-wide">PROVE YOUR DIFFERENCE</div>
-    <div class="ko">당신을 증명하는 차이, 아클래드</div>
+    <div class="ko">당신을 증명하는 차이, 아클래드 1009</div>
 </div>
 <?php get_footer();?>

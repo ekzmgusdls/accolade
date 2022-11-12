@@ -7,7 +7,7 @@ $count = 0; ?>
     </section>
     <section class="section section--instagram" id='instagram'>
         <div class="text">
-            <h2>ACCOLADE INSTAGRAM</h2>
+            <h2>ACCOLADE 1009 INSTAGRAM</h2>
             <p>
                 아클래드 1009의 다양한 <br class="mobile-br">
                 이벤트 및 소식을<br> <br class="mobile-br">
@@ -21,12 +21,12 @@ $count = 0; ?>
         <div class="text">
 
             <div class="chair" <?php mxmImg();?>></div>
-            <h2>ACCOLADE &times; FRITZ HANSEN</h2>
+            <h2>ACCOLADE 1009 &times; FRITZ HANSEN</h2>
             <p>
-                ACCOLADE Limited Edition<br>
+                ACCOLADE 1009 Limited Edition<br>
                 <br>
-                아클래드가 프리츠한센과 함께 준비한<br>
-                아클래드 리미티드 에디션을 갤러리에서 만나보세요
+                아클래드 1009가 프리츠한센과 함께 준비한<br>
+                아클래드 1009 리미티드 에디션을 갤러리에서 만나보세요
             </p>
             <div class="img mobile-show" <?php mxmImgC(2) ?>></div>
             <p class='text__description'>
@@ -38,10 +38,10 @@ $count = 0; ?>
     </section>
     <section class="section section--leeseongsoo">
         <div class="text">
-            <h2>ACCOLADE &times; 이성수 작가</h2>
+            <h2>ACCOLADE 1009 &times; 이성수 작가</h2>
             <p>
-                아클래드 갤러리에서 이성수 작가의 작품을 만나보세요.
-                아클래드는 이성수 작가와 함께
+                아클래드 1009 갤러리에서 이성수 작가의 작품을 만나보세요.
+                아클래드 1009는 이성수 작가와 함께
                 아클래드 1009 로비에 설치될 오브제를 계획하고 있습니다.
             </p>
             <div class="img mobile-show" <?php mxmImgC(4)?>></div>

@@ -31,12 +31,12 @@
             <div class="left-container">
                 세월이 쌓여 울림이 되고,<br />
                 그 울림을 발자취로 남기는 당신.<br />
-                아클래드가 당신을 증명합니다.
+                아클래드 1009 당신을 증명합니다.
             </div>
             <div class="right-container">
                 <iframe
                     src="https://www.youtube.com/embed/fbqsB9ATUcA?autoplay=1&rel=0&showinfo=0&modestbranding=1&playsinline=1&controls=1&color=white&loop=1&mute=1"
-                    title="당신을 증명하는 차이, 아클래드 [ACCOLADE 1009]" frameborder="0"
+                    title="당신을 증명하는 차이, 아클래드 1009 [ACCOLADE 1009]" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -46,7 +46,7 @@
         <div class="section__content">
             <div class="bottom-title">
                 <div class="en letter-space-wide">PROVE YOURSELF</div>
-                <div class="ko">당신을 증명하는 차이, 아클래드</div>
+                <div class="ko">당신을 증명하는 차이, 아클래드 1009</div>
             </div>
             <div class="left-container"></div>
             <div class="right-container">
@@ -88,11 +88,11 @@
                 <div class="text">
                     <h2>VIRTU</h2>
                     <p>
-                        아클래드의 지혜와 역량.<br />
+                        아클래드 1009의 지혜와 역량.<br />
                         <br />
                         최상의 환경<sup>Fortuna</sup>에<br />
-                        아클래드만의 세심한 역량<sup>Virtu</sup>을 더하여<br />
-                        가치와 차이를 가진 주거 공간 아클래드를 만듭니다.
+                        아클래드 1009만의 세심한 역량<sup>Virtu</sup>을 더하여<br />
+                        가치와 차이를 가진 주거 공간 아클래드 1009를 만듭니다.
                     </p>
                     <br>
                     <a class='view-more' href='<?= get_permalink( get_page_by_path( 'virtu' ) )?>'>
@@ -153,10 +153,10 @@
             </div>
             <div class="bottom-title">
                 <div class="en letter-space-wide">PROVE YOUR DIFFERENCE</div>
-                <div class="ko">당신을 증명하는 차이, 아클래드</div>
+                <div class="ko">당신을 증명하는 차이, 아클래드 1009</div>
                 <footer>
                     <div class="footer-left">
-                        © 2022 ACCOLADE. ALL RIGHTS ARE RESERVED.<br />
+                        © 2022 ACCOLADE 1009. ALL RIGHTS ARE RESERVED.<br />
                         본 사이트 내 사용된 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.
                     </div>
                     <div class="footer-right">

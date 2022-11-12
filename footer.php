@@ -34,7 +34,7 @@
 </div>
 <footer>
     <div class="footer-left">
-        © 2022 ACCOLADE. ALL RIGHTS ARE RESERVED.<br />
+        © 2022 ACCOLADE 1009. ALL RIGHTS ARE RESERVED.<br />
         본 사이트 내 사용된 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.
     </div>
     <div class="footer-right">

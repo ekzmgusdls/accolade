@@ -3,11 +3,11 @@ $count = 0 ;?>
 <main>
     <section class="section section--main" <?php mxmImg();?>>
         <h1>VIRTU</h1>
-        <p>아클래드의 지혜와 역량.<br>
+        <p>아클래드 1009의 지혜와 역량.<br>
             <br>
             최상의 환경Fortuna에<br>
-            아클래드만의 세심한 역량VIRTU을 더하여<br>
-            가치와 차이를 가진 주거 공간 아클래드를 만듭니다.
+            아클래드 1009만의 세심한 역량VIRTU을 더하여<br>
+            가치와 차이를 가진 주거 공간 아클래드 1009를 만듭니다.
         </p>
     </section>
     <section id='design'>
@@ -84,7 +84,7 @@ $count = 0 ;?>
                     <br>
                     고전 건축의 강직함이 느껴지는 거대한 기단(Podium).
                     <br>
-                    아클래드의 포디움은 각 세대의 정주성을 높임과 동시에,
+                    아클래드 1009의 포디움은 각 세대의 정주성을 높임과 동시에,
                     <br>
                     그 위 V자형 주동의 남향 배치를 통해
                     <br>
@@ -102,7 +102,7 @@ $count = 0 ;?>
                     세대간섭 없는 전 세대 남향 배치, <br class='mobile-br'>
                     완만한 주차 진입로와 총 100대의 자주식 주차 확보,<br><br class='mobile-br'>
                     1세대 1코어 설계를 통한 세대 단독 EV 및 프라이빗한 공용 현관 등.<br><br class='mobile-br'>
-                    아클래드는 전 세대의 삶을 온전히 담을 수 있는 <br class='mobile-br'>Sustainable한 주거 공간을 제공합니다.
+                    아클래드 1009는 전 세대의 삶을 온전히 담을 수 있는 <br class='mobile-br'>Sustainable한 주거 공간을 제공합니다.
                 </p>
             </div>
         </section>
@@ -132,7 +132,7 @@ $count = 0 ;?>
                     외부 풍경을 감상할 수 있는 욕실, <br class='mobile-br'>품격을 높이는 주방과 그랜드 드레스룸,<br class='mobile-br'>
                     모든 세대를 수용하는 가변형 구조까지.<br><br class='mobile-br'>
                     <br class='mobile-br'>
-                    아클래드는 새로운 경험을 선사하고 <br class='mobile-br'>생활 속 장면들을 최고의 순간으로 디자인합니다.
+                    아클래드 1009는 새로운 경험을 선사하고 <br class='mobile-br'>생활 속 장면들을 최고의 순간으로 디자인합니다.
                 </p>
             </div>
         </section>
@@ -147,7 +147,7 @@ $count = 0 ;?>
                     엘리베이터홀은 당신의 차이를 표현할 수 있는 또 하나의 공간이 됩니다.<br><br class="mobile-br">
                     100% 자주식으로 구성된 총 100대의 주차공간,
                     <br><br class="mobile-br">
-                    그랜드한 호텔식 드롭오프 존은 아클래드만의 차이입니다.
+                    그랜드한 호텔식 드롭오프 존은 아클래드 1009만의 차이입니다.
                 </p>
             </div>
         </section>

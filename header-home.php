@@ -131,7 +131,8 @@ if($_GET['submit'] == 'already-exists'){
         <div class="register-popup__left"></div>
         <div class="register-popup__main">
             <div class="register-popup__title">REGISTER</div>
-            <div class="register-popup__description">아클래드의 관심 고객으로 등록하시면, <br />아클래드의 다양한 소식과 분양 및 각종 브랜드 정보를 안내해드립니다.
+            <div class="register-popup__description">아클래드 1009의 관심 고객으로 등록하시면, <br />아클래드 1009의 다양한 소식과 분양 및 각종 브랜드 정보를
+                안내해드립니다.
             </div>
             <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post" id="userForm">
                 <input type="hidden" name="action" value="user_form">

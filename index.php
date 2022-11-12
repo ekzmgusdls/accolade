@@ -30,7 +30,7 @@
             <div class="left-container">
                 세월이 쌓여 울림이 되고,<br />
                 그 울림을 발자취로 남기는 당신.<br />
-                아클래드가 당신을 증명합니다.
+                아클래드 1009가 당신을 증명합니다.
             </div>
             <div class="right-container">
                 <iframe
@@ -45,7 +45,7 @@
         <div class="section__content">
             <div class="bottom-title">
                 <div class="en letter-space-wide">PROVE YOURSELF</div>
-                <div class="ko">당신을 증명하는 차이, 아클래드</div>
+                <div class="ko">당신을 증명하는 차이, 아클래드 1009</div>
             </div>
             <div class="left-container"></div>
             <div class="right-container">
@@ -78,9 +78,9 @@
                 <div class="text">
                     <h2>NATURE</h2>
                     <p>
-                        아클래드가 품은 영구조망.<br />
+                        아클래드 1009가 품은 영구조망.<br />
                         <br />
-                        아클래드의 정원처럼 펼쳐진 우면산은<br />
+                        아클래드 1009의 정원처럼 펼쳐진 우면산은<br />
                         계절 따라 다채로운 모습과<br />
                         신선한 공기를 선사합니다. <br />
                     </p>
@@ -95,7 +95,7 @@
                         <p>
                             창 밖 도시의 감각적인 낮과 밤.<br />
                             <br />
-                            아클래드의 시티뷰,<br />
+                            아클래드 1009의 시티뷰,<br />
                             그 시간 속에는<br />
                             놀라운 새벽의 일출과<br />
                             장엄한 석양이 있고,<br />
@@ -113,11 +113,11 @@
                 <div class="text">
                     <h2>VIRTU</h2>
                     <p>
-                        아클래드의 지혜와 역량.<br />
+                        아클래드 1009의 지혜와 역량.<br />
                         <br />
                         최상의 환경<sup>Fortuna</sup>에<br />
-                        아클래드만의 세심한 역량<sup>Virtu</sup>을 더하여<br />
-                        가치와 차이를 가진 주거 공간 아클래드를 만듭니다.
+                        아클래드 1009만의 세심한 역량<sup>Virtu</sup>을 더하여<br />
+                        가치와 차이를 가진 주거 공간 아클래드 1009를 만듭니다.
                     </p>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     <p>
                         아름다움(Beauty)과 유용함(Use)의 균형적인 조합.<br />
                         <br />
-                        아클래드의 디자인은 질서와 균형, 그리고 우아함이 있는 아름다움을 추구합니다.<br />
+                        아클래드 1009의 디자인은 질서와 균형, 그리고 우아함이 있는 아름다움을 추구합니다.<br />
                         주거공간을 위한 유용한 쓰임을 제공합니다.
                     </p>
                 </div>
@@ -142,7 +142,7 @@
                     <p>
                         변치 않음과 지속가능성의 조화<br />
                         <br />
-                        아클래드의 타임리스는<br />
+                        아클래드 1009의 타임리스는<br />
                         변치않는 아름다움과 지속가능한 쓰임을 제공합니다.<br />
                         시간이 흐르고 세대가 바뀌어도 변화하는 삶의 모습을 수용합니다.
                     </p>
@@ -170,7 +170,7 @@
                     <p>
                         생활 속 장면들이 최고의 순간으로.<br />
                         <br />
-                        아클래드의 라이프스타일은<br />
+                        아클래드 1009의 라이프스타일은<br />
                         삶의 질을 높이는 경험을 제공합니다.<br />
                         각자의 새로운 취향을 구현합니다.
                     </p>
@@ -291,10 +291,10 @@
             </div>
             <div class="bottom-title">
                 <div class="en letter-space-wide">PROVE YOUR DIFFERENCE</div>
-                <div class="ko">당신을 증명하는 차이, 아클래드</div>
+                <div class="ko">당신을 증명하는 차이, 아클래드 1009</div>
                 <footer>
                     <div class="footer-left">
-                        © 2022 ACCOLADE. ALL RIGHTS ARE RESERVED.<br />
+                        © 2022 ACCOLADE 1009. ALL RIGHTS ARE RESERVED.<br />
                         본 사이트 내 사용된 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.
                     </div>
                     <div class="footer-right">
