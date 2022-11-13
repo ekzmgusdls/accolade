@@ -11,7 +11,20 @@
             }
 
             .img {
-                aspect-ratio: 1.33;
+                .img-box {
+                    aspect-ratio: 1.33;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center center;
+                }
+                .text-box {
+                    width: 60%;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: opt(10);
+                    word-break: keep-all;
+                    backdrop-filter: blur(5px);
+                    padding-left: opt(30);
+                }
             }
             .text {
                 text-align: left;
@@ -113,6 +126,14 @@
                     text-align: center;
                     padding-top: opt(40);
                     padding-bottom: opt(5);
+                }
+
+                .img {
+                    .text-box {
+                        padding-left: opt(20);
+                        font-size: opt(14);
+                        width: 100%;
+                    }
                 }
             }
 
