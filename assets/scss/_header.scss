@@ -140,5 +140,16 @@
     }
     #mobile-header {
         display: flex;
+        .menu-trigger,
+        .sns {
+            width: 4vw;
+            a {
+                width: 100%;
+                display: inline-block;
+            }
+            img {
+                width: 100%;
+            }
+        }
     }
 }

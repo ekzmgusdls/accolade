@@ -275,10 +275,9 @@ jQuery(document).ready(function ($) {
     homeMobileHeader();
     sessionForPopup();
 
-    $(document).resize(function (e) {
+    $(window).resize(function (e) {
         adjustIframeRatio();
         homeMobileHeader();
-
         // 웹일때
         if (innerWidth > mobileWidthStd) {
             $('#mobile-header').fadeOut();

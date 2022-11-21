@@ -9,7 +9,8 @@ $count = 0;?>
         <div class="img">
             <div class="img-box" <?php mxmImg();?>></div>
             <div class="text-box">
-                <p>By accepting conditions and limits and negotiating with them, through the act of construction,
+                <p class='en'>By accepting conditions and limits and negotiating with them, through the act of
+                    construction,
                     architecture becomes what it really is.</p>
                 <p>조건과 한계를 받아들이고 조율함으로써, 구축의 행위를 통해 건축은 비로소 실재하게 된다.</p>
             </div>
