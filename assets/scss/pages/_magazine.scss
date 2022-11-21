@@ -1,7 +1,7 @@
 .page-id-130 {
     .section {
         &--main {
-            background-size: 200%;
+            background-size: 100%;
             background-position: center top;
             background-repeat: repeat;
         }
@@ -97,6 +97,9 @@
 @include mobile() {
     .page-id-130 {
         .section {
+            &--main {
+                background-size: 200%;
+            }
             &--instagram {
                 padding: 0;
                 height: auto;
